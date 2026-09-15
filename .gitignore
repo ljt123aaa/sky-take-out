@@ -5,3 +5,10 @@ target/
 *.log
 .vscode/
 bin/
+*.exe
+*.pdb
+*.rdb
+*.pak
+*.asar
+icudtl.dat
+*.dll
