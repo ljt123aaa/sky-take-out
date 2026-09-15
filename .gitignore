@@ -12,3 +12,4 @@ bin/
 *.asar
 icudtl.dat
 *.dll
+backend/sky-server/src/main/resources/application-dev.yml
