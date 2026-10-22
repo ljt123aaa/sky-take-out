@@ -24,4 +24,14 @@ public interface UserMapper {
      * @param user
      */
     void insertWxUser(User user);
+
+    /*
+     * 根据用户id查询用户
+     * 
+     * @param userId
+     * 
+     * @return
+     */
+    @Select("Select * from user where id = #{userId}")
+    User getById(Long userId);
 }

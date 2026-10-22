@@ -100,8 +100,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     public void cleanShoppingCart() {
         // 获取到当前登录用户id
         Long userId = BaseContext.getCurrentId();
-        ShoppingCart shoppingCart = ShoppingCart.builder().userId(userId).build();
-        shoppingCartMapper.deleteByUserId(shoppingCart);
+        shoppingCartMapper.deleteByUserId(userId);
     }
 
     /**
